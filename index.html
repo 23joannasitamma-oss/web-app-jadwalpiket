@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Piket Keren ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jadwal Piket Kelas/Kantor 📅</h1>
+        <p class="tagline">Siapa Bertugas Hari Ini? Cek di Sini!</p>
+
+        <div class="selection-box">
+            <label for="day-select">Pilih Hari:</label>
+            <select id="day-select">
+                <option value="">-- Pilih Hari --</option>
+                <option value="senin">Senin</option>
+                <option value="selasa">Selasa</option>
+                <option value="rabu">Rabu</option>
+                <option value="kamis">Kamis</option>
+                <option value="jumat">Jumat</option>
+            </select>
+        </div>
+
+        <div id="piket-output" class="output-box">
+            <h2 id="piket-title">Pilih Hari untuk Melihat Jadwal!</h2>
+            <ul id="piket-list">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

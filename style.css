@@ -1,0 +1,121 @@
+body {
+    /* Font Keren */
+    font-family: 'Montserrat', sans-serif;
+    /* Latar Belakang Gradien yang dinamis */
+    background: linear-gradient(to right top, #0072ff, #00c6ff);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95); /* Sedikit transparan dengan latar belakang putih */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
+    width: 450px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+    color: #0072ff; /* Warna judul sesuai gradien */
+}
+
+.tagline {
+    margin-bottom: 30px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Styling Dropdown */
+.selection-box {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+#day-select {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 2px solid #0072ff;
+    font-size: 1.1em;
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    transition: all 0.3s;
+}
+
+#day-select:hover, #day-select:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 8px rgba(0, 114, 255, 0.4);
+    outline: none;
+}
+
+/* Area Hasil Piket */
+.output-box {
+    text-align: left;
+    background-color: #f0f7ff; /* Latar belakang lembut untuk konten */
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 6px solid #ff6b6b; /* Garis keren di samping */
+    min-height: 150px; /* Agar tampilan tidak berubah drastis saat kosong */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+}
+
+#piket-title {
+    color: #ff6b6b;
+    border-bottom: 2px solid #ff6b6b;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.6em;
+}
+
+#piket-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+#piket-list li {
+    background: #ffffff;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #333;
+    border-left: 4px solid #00c6ff;
+    transition: transform 0.2s;
+}
+
+#piket-list li:hover {
+    transform: translateX(5px);
+    background: #f9f9f9;
+}
+
+/* Efek khusus saat jadwal dimuat */
+.loaded {
+    animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
